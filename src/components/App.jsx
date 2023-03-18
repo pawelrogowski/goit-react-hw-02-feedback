@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import Section from './Section/Section';
+import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
+import Statistics from './Statistics/Statistics';
+import Notification from './Notification/Notification';
 class App extends Component {
   state = {
     good: 0,
@@ -54,43 +57,6 @@ class App extends Component {
         </Section>
       </div>
     );
-  }
-}
-
-class FeedbackOptions extends Component {
-  render() {
-    const { options, onLeaveFeedback } = this.props;
-    return (
-      <div>
-        {Object.keys(options).map(option => (
-          <button key={option} onClick={() => onLeaveFeedback(option)}>
-            {option}
-          </button>
-        ))}
-      </div>
-    );
-  }
-}
-
-class Statistics extends Component {
-  render() {
-    const { good, neutral, bad, total, positivePercentage } = this.props;
-    return (
-      <div>
-        <p>Good: {good}</p>
-        <p>Neutral: {neutral}</p>
-        <p>Bad: {bad}</p>
-        <p>Total: {total}</p>
-        <p>Positive feedback: {positivePercentage}%</p>
-      </div>
-    );
-  }
-}
-
-class Notification extends Component {
-  render() {
-    const { message } = this.props;
-    return <p>{message}</p>;
   }
 }
 
