@@ -5,11 +5,11 @@ class Statistics extends Component {
     const { good, neutral, bad, total, positivePercentage } = this.props;
     return (
       <div>
-        <p>Good: {good}</p>
-        <p>Neutral: {neutral}</p>
-        <p>Bad: {bad}</p>
-        <p>Total: {total}</p>
-        <p>Positive feedback: {positivePercentage}%</p>
+        <p className={styles.stat}>Good: {good}</p>
+        <p className={styles.stat}>Neutral: {neutral}</p>
+        <p className={styles.stat}>Bad: {bad}</p>
+        <p className={styles.stat}>Total: {total}</p>
+        <p className={styles.stat}>Positive feedback: {positivePercentage}%</p>
       </div>
     );
   }
