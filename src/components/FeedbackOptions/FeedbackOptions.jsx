@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styles from './feedbackOptions.module.css';
+
 class FeedbackOptions extends Component {
   render() {
     const { options, onLeaveFeedback } = this.props;
@@ -24,5 +26,10 @@ class FeedbackOptions extends Component {
     );
   }
 }
+
+FeedbackOptions.propTypes = {
+  options: PropTypes.object.isRequired,
+  onLeaveFeedback: PropTypes.func.isRequired,
+};
 
 export default FeedbackOptions;
