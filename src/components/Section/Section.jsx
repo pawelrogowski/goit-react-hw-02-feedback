@@ -4,8 +4,8 @@ class Section extends Component {
   render() {
     const { title, children } = this.props;
     return (
-      <div className={styles['section']}>
-        <h2 className={styles['section__title']}>{title}</h2>
+      <div className={styles['mb']}>
+        <h2 className={styles['title-mb']}>{title}</h2>
         {children}
       </div>
     );

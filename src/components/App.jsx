@@ -42,7 +42,7 @@ class App extends Component {
             onLeaveFeedback={this.handleAnswer}
           />
         </Section>
-        <Section title="Statistics">
+        <Section title="Statistics:">
           {total === 0 ? (
             <Notification message="There is no feedback yet." />
           ) : (

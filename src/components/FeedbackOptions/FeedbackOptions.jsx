@@ -9,10 +9,10 @@ class FeedbackOptions extends Component {
           <button
             className={
               option === 'good'
-                ? styles['feedback-options__button--green']
+                ? styles['button-green']
                 : option === 'neutral'
-                ? styles['feedback-options__button--grey']
-                : styles['feedback-options__button--red']
+                ? styles['button-grey']
+                : styles['button-red']
             }
             key={option}
             onClick={() => onLeaveFeedback(option)}
