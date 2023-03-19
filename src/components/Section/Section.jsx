@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import styles from './section.module.css';
 class Section extends Component {
   render() {
     const { title, children } = this.props;
     return (
-      <div>
-        <h2>{title}</h2>
+      <div className={styles['section']}>
+        <h2 className={styles['section__title']}>{title}</h2>
         {children}
       </div>
     );

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import styles from './notification.module.css';
 class Notification extends Component {
   render() {
     const { message } = this.props;
-    return <p>{message}</p>;
+    return <p className={styles['feedback-notification']}>{message}</p>;
   }
 }
 
